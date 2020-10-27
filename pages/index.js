@@ -8,7 +8,7 @@ export default function Home() {
 
             <main>
               <p>
-                Esta seria la página, no hay mucho mas. 
+                Esta sería la página, no hay mucho mas. 
                 <br/>
                 <br/>
                 Espero que te guste.

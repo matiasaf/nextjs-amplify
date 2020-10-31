@@ -4,13 +4,11 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 .font-muli {
     font-family: 'Muli', sans-serif;
 }
-
 
 html,
 body {

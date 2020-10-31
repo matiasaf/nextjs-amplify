@@ -1,7 +1,7 @@
 import LibraryIcon from '../svg/libraryIcon';
 
 const Card = () => (
-    <div className="m-4 w-56 bg-gray-200 rounded flex flex-col justify-center items-center px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+    <div className="m-4 w-56 bg-gray-200 rounded flex flex-col justify-center items-center px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-md ">
         <div className="mt-8">
             <LibraryIcon />
         </div>

@@ -11,7 +11,7 @@ function TextSection() {
                 gratuita.
             </p>
 
-            <button class="mt-8 self-center bg-blue-400 w-32 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-8 self-center bg-blue-400 w-32 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Ir al mapa
             </button>
         </div>

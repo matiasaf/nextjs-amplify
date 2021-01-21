@@ -10,6 +10,10 @@
     font-family: 'Muli', sans-serif;
 }
 
+.h-xlarge {
+  height: 20rem;
+}
+
 html,
 body {
   padding: 0;

@@ -3,7 +3,7 @@ export const NewsCard = ({ imgUrl, title, body }) => (
         <img className="h-48 w-full object-cover" src={imgUrl} />
 
         <div className="p-8">
-            <div className="text-center text-gray-600">{title}</div>
+            <div className="text-center text-gray-600 text-2xl">{title}</div>
             <p className="text-center mt-4">{body}</p>
         </div>
     </div>

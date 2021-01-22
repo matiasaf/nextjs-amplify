@@ -4,6 +4,9 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+@import "../node_modules/slick-carousel/slick/slick.css"; 
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 .font-muli {

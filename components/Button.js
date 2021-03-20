@@ -1,7 +1,6 @@
 import { css } from 'emotion';
 
 function Button({ children }) {
-    // const color = 'white';
     return <div className={buttonStyle}>{children}</div>;
 }
 

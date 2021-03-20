@@ -48,7 +48,7 @@ export default function Home() {
 
                 {/* CARD SECTION */}
 
-                <div className="flex h-64 justify-evenly flex-wrap m-16">
+                <div className="flex justify-evenly flex-wrap m-16">
                     <Card title="Fuentes de información" />
                     <Card title="Colaboradores" />
                     <Card title="Quéres ser parte de la iniciativa?" />
@@ -72,7 +72,7 @@ export default function Home() {
 
                 {/* LOGOS SECTION */}
 
-                <div className="flex justify-evenly items-center h-64 my-16">
+                <div className="flex justify-evenly items-center h-64 my-16 w-full">
                     <img src="images/icon1.png" />
                     <img src="https://3.bp.blogspot.com/-rJi8G6r0zd4/XxYZSE6SDCI/AAAAAAAAAFs/dvoFSGcpm2Y9Q2kHqSroZLrSJc0dimtIACK4BGAYYCw/s1600/BAP.jpg" />
                     <img src="images/icon2.png" />

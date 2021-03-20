@@ -39,14 +39,8 @@ export default function Home() {
                         />
 
                         <NewsCard
-                            mapUrl="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
+                            mapUrl="https://www.google.com/maps/d/embed?mid=1xowCKXXVM4MESRs1Op7oSFQtH8cYT2Fm"
                             title="Mapear redes"
-                            body="Durante la primera mitad de 2020, Poblaciones incorporó nuevas herramientas y opciones que se integraron a la plataforma.…"
-                        />
-
-                        <NewsCard
-                            mapUrl="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
-                            title="Agenda de eventos"
                             body="Durante la primera mitad de 2020, Poblaciones incorporó nuevas herramientas y opciones que se integraron a la plataforma.…"
                         />
                     </div>

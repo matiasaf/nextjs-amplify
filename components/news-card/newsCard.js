@@ -1,7 +1,7 @@
 import Iframe from 'react-iframe';
 
 export const NewsCard = ({ mapUrl, title, body }) => (
-    <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/4 m-4 w-full">
+    <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 m-4 w-full">
         <Iframe
             url={mapUrl}
             width="450px"

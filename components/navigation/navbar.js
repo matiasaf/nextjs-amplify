@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LocationIcon from '../svg/locationIcon';
 
 function Navbar() {
@@ -25,43 +26,39 @@ function Navbar() {
             </div>
             <div className="w-full lg:w-auto self-stretch text-gray-500 text-lg font-muli">
                 <div className="lg:flex justify-center">
-                  <img className="mr-8" src="images/icon1.png"/>
-                  <img src="images/icon2.png"/>
+                    <img className="mr-8" src="/images/icon1.png" />
+                    <img src="/images/icon2.png" />
                 </div>
                 <div className="lg:flex mt-8">
                     <div className="text-md lg:flex-grow lg:flex justiend">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center mr-4 text-center hover:text-blue-500"
-                        >
-                            Inicio
-                        </a>
+                        <Link href="/">
+                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center mr-4 text-center hover:text-blue-500">
+                                Inicio
+                            </a>
+                        </Link>
                     </div>
                     <div className="text-md lg:flex-grow lg:flex">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500"
-                        >
-                            ¿Qué es mapear comunidad?
-                        </a>
+                        <Link href="/what-is">
+                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500">
+                                ¿Qué es mapear comunidad?
+                            </a>
+                        </Link>
                     </div>
 
                     <div className="text-md lg:flex-grow lg:flex">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500"
-                        >
-                            ¿Cómo funciona?
-                        </a>
+                        <Link href="/how-works">
+                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500">
+                                ¿Cómo funciona?
+                            </a>
+                        </Link>
                     </div>
 
                     <div className="text-md lg:flex-grow lg:flex">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500"
-                        >
-                            Contacto
-                        </a>
+                        <Link href="/contact">
+                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500">
+                                Contacto
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

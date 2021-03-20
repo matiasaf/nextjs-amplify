@@ -4,7 +4,6 @@ import TextSection from '../components/text-section/textSection';
 import Card from '../components/card/card';
 import { StyledDivider } from '../components/styled/divider';
 import { NewsCard } from '../components/news-card/newsCard';
-import { CartografiaCard } from '../components/cartografia-card/cartografiaCard';
 import SimpleSlider from '../components/slider/simpleSlider';
 import LocationIcon from '../components/svg/locationIcon';
 import InstagramIcon from '../components/svg/instagramIcon';
@@ -14,6 +13,7 @@ export default function Home() {
     return (
         <div>
             <Navbar />
+
             <main>
                 <div className="flex justify-center mt-20">
                     <div className="bg-gray-700 w-1/6 h-56"></div>
@@ -51,6 +51,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
+
                 {/* CARD SECTION */}
 
                 <div className="flex h-64 justify-evenly flex-wrap m-16">
@@ -93,7 +94,6 @@ export default function Home() {
                         </span>
                     </div>
                     <div>
-                        {/* <h1 className="text-2xl font-muli">Contacto:</h1> */}
                         <div className="font-muli mt-4 flex flex-col">
                             <div className="flex items-center">
                                 <InstagramIcon height={32} />
@@ -101,6 +101,7 @@ export default function Home() {
                                     mapearcomunidad
                                 </label>
                             </div>
+
                             <div className="flex items-center mt-8">
                                 <MailIcon height={32} />
                                 <label className="text-gray-800 ml-4">

@@ -33,19 +33,19 @@ export default function Home() {
 
                     <div className="flex justify-center m-8 flex-wrap">
                         <NewsCard
-                            imgUrl="https://poblaciones.org/wp-content/uploads/2020/08/nov.png"
+                            mapUrl="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
                             title="Mapear en emergencia"
                             body="Durante la primera mitad de 2020, Poblaciones incorporó nuevas herramientas y opciones que se integraron a la plataforma.…"
                         />
 
                         <NewsCard
-                            imgUrl="https://poblaciones.org/wp-content/uploads/2020/08/nov.png"
+                            mapUrl="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
                             title="Mapear redes"
                             body="Durante la primera mitad de 2020, Poblaciones incorporó nuevas herramientas y opciones que se integraron a la plataforma.…"
                         />
 
                         <NewsCard
-                            imgUrl="https://poblaciones.org/wp-content/uploads/2020/07/foto2-1-scaled-e1594796147475.jpg"
+                            mapUrl="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
                             title="Agenda de eventos"
                             body="Durante la primera mitad de 2020, Poblaciones incorporó nuevas herramientas y opciones que se integraron a la plataforma.…"
                         />
@@ -63,6 +63,8 @@ export default function Home() {
                 {/* CARTOGRAFIAS SECTION */}
 
                 <div className="flex flex-col justify-around mt-16 py-8 bg-gray-100">
+                    <StyledDivider className="self-center mb-4" />
+
                     <h1 className="text-center font-muli font-extrabold text-2xl text-gray-700">
                         Novedades
                     </h1>

@@ -8,21 +8,24 @@ import SimpleSlider from '../components/slider/simpleSlider';
 import LocationIcon from '../components/svg/locationIcon';
 import InstagramIcon from '../components/svg/instagramIcon';
 import MailIcon from '../components/svg/mailIcon';
+import { BackgroundImage } from '../components/styled/backgroundImage';
 
 export default function Home() {
     return (
         <div>
+
             <Navbar />
 
             <main>
-                <div className="flex justify-center mt-20">
-                    <div className="bg-gray-700 w-1/6 h-56"></div>
-                    <TextSection />
-                </div>
+                <BackgroundImage>
+                    <div className="flex justify-center py-20">
+                        <TextSection />
+                    </div>
+                </BackgroundImage>
 
                 {/* NOVEDADES SECTION */}
 
-                <div className="flex flex-col justify-around my-16 py-8 bg-gray-100">
+                <div className="flex flex-col justify-around py-8 bg-gray-100">
                     <StyledDivider className="self-center mb-4" />
 
                     <h1 className="text-center font-muli font-extrabold text-2xl text-gray-700">
@@ -50,8 +53,8 @@ export default function Home() {
 
                 <div className="flex justify-evenly flex-wrap m-16">
                     <Card title="Fuentes de información" />
-                    <Card title="Colaboradores" />
-                    <Card title="Quéres ser parte de la iniciativa?" />
+                    <Card title="¿Cómo accedo a la información de los mapas?" />
+                    <Card title=" ¿Cómo me sumo a  la iniciativa?" />
                 </div>
 
                 {/* CARTOGRAFIAS SECTION */}
@@ -74,7 +77,6 @@ export default function Home() {
 
                 <div className="flex justify-evenly items-center h-64 my-16 w-full">
                     <img src="images/icon1.png" />
-                    <img src="https://3.bp.blogspot.com/-rJi8G6r0zd4/XxYZSE6SDCI/AAAAAAAAAFs/dvoFSGcpm2Y9Q2kHqSroZLrSJc0dimtIACK4BGAYYCw/s1600/BAP.jpg" />
                     <img src="images/icon2.png" />
                 </div>
 
@@ -84,9 +86,9 @@ export default function Home() {
                         <div className="self-center">
                             <LocationIcon height={30} />
                         </div>
-                        <span className="ml-4 text-5xl text-gray-600">
-                            Mapear{' '}
-                            <span className="text-blue-400"> Comunidad </span>
+                        <span className="ml-4 text-3xl lg:text-5xl text-gray-600">
+                            MAPEAR{' '}
+                            <span className="text-blue-400"> COMUNIDAD </span>
                         </span>
                     </div>
                     <div>

@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import LocationIcon from '../svg/locationIcon';
 import { useState } from 'react';
-import useWindowsWidth from '../customs-hooks/useWindowWidth';
 
 function Navbar() {
     const [menuOn, setOnMenu] = useState(false);
-    const onSmallScreen = useWindowsWidth();
 
     return (
         <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
@@ -33,7 +31,7 @@ function Navbar() {
                 </button>
             </div>
             <div className="w-full lg:w-auto self-stretch text-gray-500 text-lg font-muli">
-                <div className={`lg:flex justify-center ${onSmallScreen && 'hidden'}`}>
+                <div className="hidden lg:flex justify-center">
                     <a href="http://www.fts.uner.edu.ar/" target="_blank">
                         <img className="mr-8" src="/images/icon1.png" />
                     </a>
@@ -42,7 +40,7 @@ function Navbar() {
                         <img src="/images/icon2.png" />
                     </a>
                 </div>
-                <div className={`lg:flex mt-8 ${onSmallScreen && !menuOn && 'hidden'}`}>
+                <div className={`lg:flex mt-8 ${menuOn ? 'block' : 'hidden'}`}>
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/">
                             <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center lg:mr-4 hover:text-blue-500">

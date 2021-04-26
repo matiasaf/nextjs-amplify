@@ -54,15 +54,15 @@ export default function Home() {
                 <div className="flex justify-evenly flex-wrap m-16">
                     <Card
                         title="Fuentes de información"
-                        link="fuentes-de-informacion"
+                        appLink="fuentes-de-informacion"
                     />
                     <Card
                         title="¿Cómo accedo a la información de los mapas?"
-                        link="informacion-mapas"
+                        appLink="informacion-mapas"
                     />
                     <Card
                         title=" ¿Cómo me sumo a  la iniciativa?"
-                        link="como-me-sumo"
+                        appLink="como-me-sumo"
                     />
                 </div>
 

@@ -16,7 +16,7 @@ export default function Home() {
         <div>
             <Navbar />
 
-            <main className="mt-32">
+            <main className="mt-16 lg:mt-32">
                 <BackgroundImage>
                     <div className="flex justify-center py-20">
                         <TextSection />
@@ -52,9 +52,18 @@ export default function Home() {
                 {/* CARD SECTION */}
 
                 <div className="flex justify-evenly flex-wrap m-16">
-                    <Card title="Fuentes de información" link="fuentes-de-informacion" />
-                    <Card title="¿Cómo accedo a la información de los mapas?" link="informacion-mapas" />
-                    <Card title=" ¿Cómo me sumo a  la iniciativa?" link="como-me-sumo" />
+                    <Card
+                        title="Fuentes de información"
+                        link="fuentes-de-informacion"
+                    />
+                    <Card
+                        title="¿Cómo accedo a la información de los mapas?"
+                        link="informacion-mapas"
+                    />
+                    <Card
+                        title=" ¿Cómo me sumo a  la iniciativa?"
+                        link="como-me-sumo"
+                    />
                 </div>
 
                 {/* CARTOGRAFIAS SECTION */}

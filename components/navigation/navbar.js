@@ -9,7 +9,7 @@ function Navbar() {
 
     return (
         <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
-            <div className="flex ml-4 font-muli">
+            <div className="flex lg:ml-4 font-muli">
                 <div className="self-center">
                     <LocationIcon height={40} />
                 </div>
@@ -17,7 +17,7 @@ function Navbar() {
                     MAPEAR <span className="text-blue-400"> COMUNIDAD </span>
                 </span>
             </div>
-            <div className="block lg:hidden">
+            <div className="mr-2 mb-2 lg:hidden">
                 <button
                     onClick={() => setOnMenu((prevValue) => !prevValue )}
                     className="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-gray hover:border-gray"

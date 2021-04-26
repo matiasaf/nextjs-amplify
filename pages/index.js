@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Navbar from '../components/navigation/navbar';
 import TextSection from '../components/text-section/textSection';
 import Card from '../components/card/card';
@@ -6,14 +7,13 @@ import { StyledDivider } from '../components/styled/divider';
 import { NewsCard } from '../components/news-card/newsCard';
 import SimpleSlider from '../components/slider/simpleSlider';
 import LocationIcon from '../components/svg/locationIcon';
-import InstagramIcon from '../components/svg/instagramIcon';
 import MailIcon from '../components/svg/mailIcon';
 import { BackgroundImage } from '../components/styled/backgroundImage';
+import { FooterSection } from '../components/footer-section';
 
 export default function Home() {
     return (
         <div>
-
             <Navbar />
 
             <main>
@@ -29,7 +29,7 @@ export default function Home() {
                     <StyledDivider className="self-center mb-4" />
 
                     <h1 className="text-center font-muli font-extrabold text-2xl text-gray-700">
-                        Proyectos
+                        Acciones
                     </h1>
 
                     <StyledDivider className="self-center mt-4" />
@@ -52,9 +52,9 @@ export default function Home() {
                 {/* CARD SECTION */}
 
                 <div className="flex justify-evenly flex-wrap m-16">
-                    <Card title="Fuentes de información" />
-                    <Card title="¿Cómo accedo a la información de los mapas?" />
-                    <Card title=" ¿Cómo me sumo a  la iniciativa?" />
+                    <Card title="Fuentes de información" link="fuentes-de-informacion" />
+                    <Card title="¿Cómo accedo a la información de los mapas?" link="informacion-mapas" />
+                    <Card title=" ¿Cómo me sumo a  la iniciativa?" link="como-me-sumo" />
                 </div>
 
                 {/* CARTOGRAFIAS SECTION */}
@@ -75,40 +75,13 @@ export default function Home() {
 
                 {/* LOGOS SECTION */}
 
-                <div className="flex justify-evenly items-center h-64 my-16 w-full">
-                    <img src="images/icon1.png" />
-                    <img src="images/icon2.png" />
+                <div className="flex justify-evenly items-center my-16 w-full flex-wrap">
+                    <img className="h-16" src="images/icon1.png" />
+                    <img className="h-16" src="images/icon2.png" />
                 </div>
 
                 {/* FOOTER SECTION */}
-                <div className="bg-gray-100 h-64 flex justify-evenly items-center">
-                    <div className="flex ml-4  font-muli">
-                        <div className="self-center">
-                            <LocationIcon height={30} />
-                        </div>
-                        <span className="ml-4 text-3xl lg:text-5xl text-gray-600">
-                            MAPEAR{' '}
-                            <span className="text-blue-400"> COMUNIDAD </span>
-                        </span>
-                    </div>
-                    <div>
-                        <div className="font-muli mt-4 flex flex-col">
-                            <div className="flex items-center">
-                                <InstagramIcon height={32} />
-                                <label className="text-gray-800 ml-4">
-                                    mapearcomunidad
-                                </label>
-                            </div>
-
-                            <div className="flex items-center mt-8">
-                                <MailIcon height={32} />
-                                <label className="text-gray-800 ml-4">
-                                    mapearenemergencia@gmail.com
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterSection />
             </main>
         </div>
     );

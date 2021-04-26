@@ -1,19 +1,27 @@
 import Link from 'next/link';
 import LocationIcon from '../svg/locationIcon';
+import { useState } from 'react';
+import useWindowsWidth from '../customs-hooks/useWindowWidth';
 
 function Navbar() {
+    const [menuOn, setOnMenu] = useState(false);
+    const onSmallScreen = useWindowsWidth();
+
     return (
         <nav className="flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4">
             <div className="flex ml-4 font-muli">
                 <div className="self-center">
                     <LocationIcon height={40} />
                 </div>
-                <span className="ml-4 text-3xl lg:text-5xl text-gray-600">
+                <span className="lg:ml-4 text-2xl lg:text-5xl text-gray-600">
                     MAPEAR <span className="text-blue-400"> COMUNIDAD </span>
                 </span>
             </div>
             <div className="block lg:hidden">
-                <button className="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-gray hover:border-gray">
+                <button
+                    onClick={() => setOnMenu((prevValue) => !prevValue )}
+                    className="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-gray hover:border-gray"
+                >
                     <svg
                         className="fill-current h-3 w-3"
                         viewBox="0 0 20 20"
@@ -25,7 +33,7 @@ function Navbar() {
                 </button>
             </div>
             <div className="w-full lg:w-auto self-stretch text-gray-500 text-lg font-muli">
-                <div className="lg:flex justify-center">
+                <div className={`lg:flex justify-center ${onSmallScreen && 'hidden'}`}>
                     <a href="http://www.fts.uner.edu.ar/" target="_blank">
                         <img className="mr-8" src="/images/icon1.png" />
                     </a>
@@ -34,10 +42,10 @@ function Navbar() {
                         <img src="/images/icon2.png" />
                     </a>
                 </div>
-                <div className="lg:flex mt-8">
+                <div className={`lg:flex mt-8 ${onSmallScreen && !menuOn && 'hidden'}`}>
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/">
-                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center mr-4 text-center hover:text-blue-500">
+                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center lg:mr-4 hover:text-blue-500">
                                 Inicio
                             </a>
                         </Link>

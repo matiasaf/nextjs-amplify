@@ -1,18 +1,23 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { css } from 'emotion';
+import useWindowsWidth from '../customs-hooks/useWindowWidth';
 
 export default function SimpleSlider() {
-    function goToLink(link) {
+    const onSmallScreen = useWindowsWidth();
+
+    const goToLink = (link) => {
         window.open(link, '_blank');
-    }
-    var settings = {
+    };
+    
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: onSmallScreen ? 1 : 3,
+        slidesToScroll: onSmallScreen ? 1 : 3,
     };
+
     return (
         <Slider {...settings}>
             <div className="p-8">

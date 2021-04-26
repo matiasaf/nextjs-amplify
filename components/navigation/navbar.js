@@ -8,7 +8,7 @@ function Navbar() {
     const onSmallScreen = useWindowsWidth();
 
     return (
-        <nav className="flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4">
+        <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
             <div className="flex ml-4 font-muli">
                 <div className="self-center">
                     <LocationIcon height={40} />

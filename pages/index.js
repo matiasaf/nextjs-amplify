@@ -16,7 +16,7 @@ export default function Home() {
         <div>
             <Navbar />
 
-            <main>
+            <main className="mt-32">
                 <BackgroundImage>
                     <div className="flex justify-center py-20">
                         <TextSection />

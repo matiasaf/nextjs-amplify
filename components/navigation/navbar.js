@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import LocationIcon from '../svg/locationIcon';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 function Navbar() {
     const [menuOn, setOnMenu] = useState(false);
+    const router = useRouter();
 
     return (
         <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
@@ -17,7 +19,7 @@ function Navbar() {
             </div>
             <div className="mr-2 mb-2 lg:hidden">
                 <button
-                    onClick={() => setOnMenu((prevValue) => !prevValue )}
+                    onClick={() => setOnMenu((prevValue) => !prevValue)}
                     className="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-gray hover:border-gray"
                 >
                     <svg
@@ -35,6 +37,9 @@ function Navbar() {
                     <a href="http://www.fts.uner.edu.ar/" target="_blank">
                         <img className="mr-8" src="/images/icon1.png" />
                     </a>
+                    <a href="http://www.fceco.uner.edu.ar/" target="_blank">
+                        <img className="mr-8 w-40" src="/images/logo-fceco.png" />
+                    </a>
                     <a href="https://www.parana.gob.ar/" target="_blank">
                         {' '}
                         <img src="/images/icon2.png" />
@@ -43,14 +48,26 @@ function Navbar() {
                 <div className={`lg:flex mt-8 ${menuOn ? 'block' : 'hidden'}`}>
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/">
-                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center lg:mr-4 hover:text-blue-500">
+                            <a
+                                className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center lg:mr-4 hover:text-blue-500 ${
+                                    router.pathname == '/'
+                                        ? `text-blue-500`
+                                        : ''
+                                }`}
+                            >
                                 Inicio
                             </a>
                         </Link>
                     </div>
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/what-is">
-                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500">
+                            <a
+                                className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500 ${
+                                    router.pathname == '/what-is'
+                                        ? `text-blue-500`
+                                        : ''
+                                }`}
+                            >
                                 ¿Qué es mapear comunidad?
                             </a>
                         </Link>
@@ -58,15 +75,27 @@ function Navbar() {
 
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/how-works">
-                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500">
-                                ¿Cómo funciona?
+                            <a
+                                className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500 ${
+                                    router.pathname == '/how-works'
+                                        ? `text-blue-500`
+                                        : ''
+                                }`}
+                            >
+                                ¿Quiénes somos?
                             </a>
                         </Link>
                     </div>
 
                     <div className="text-md lg:flex-grow lg:flex">
                         <Link href="/contact">
-                            <a className="block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500">
+                            <a
+                                className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500 ${
+                                    router.pathname == '/contact'
+                                        ? `text-blue-500`
+                                        : ''
+                                }`}
+                            >
                                 Contacto
                             </a>
                         </Link>

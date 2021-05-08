@@ -14,7 +14,10 @@ import { FooterSection } from '../components/footer-section';
 export default function Home() {
     return (
         <div>
-            <Navbar />
+            <title>Mapear Comunidad</title>
+            <header>
+                <Navbar />
+            </header>
 
             <main className="mt-16 lg:mt-32">
                 <BackgroundImage>

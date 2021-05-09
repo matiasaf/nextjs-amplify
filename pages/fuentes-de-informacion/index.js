@@ -6,7 +6,10 @@ import Card from '../../components/card/card';
 export default function FuentesDeInformacionPage() {
     return (
         <div>
-            <Navbar />
+            <title>Mapear Comunidad</title>
+            <header>
+                <Navbar />
+            </header>
 
             <main className="flex flex-col font-muli">
                 <div className="flex-grow p-4 m-4">

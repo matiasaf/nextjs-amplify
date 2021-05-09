@@ -7,8 +7,10 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function HowWorksPage() {
     return (
         <div className="flex flex-col">
-            <Navbar />
-
+            <title>Mapear Comunidad</title>
+            <header>
+                <Navbar />
+            </header>
             <main className="mt-48">
                 <div className="flex font-muli justify-center text-bold text-2xl w-full">
                     Integrantes del equipo

@@ -6,7 +6,10 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function WhatIsPage() {
     return (
         <div className="flex flex-col">
-            <Navbar />
+            <title>Mapear Comunidad</title>
+            <header>
+                <Navbar />
+            </header>
 
             <main className="mt-40 mx-16 text-justify font-muli">
                 <span className="text-bold text-2xl">

@@ -13,7 +13,7 @@ function Navbar() {
                 <div className="self-center">
                     <LocationIcon height={40} />
                 </div>
-                <span className="lg:ml-4 text-2xl lg:text-5xl text-gray-600">
+                <span className="lg:ml-4 md:text-3xl 2xl:text-5xl text-gray-600">
                     MAPEAR <span className="text-blue-400"> COMUNIDAD </span>
                 </span>
             </div>
@@ -32,7 +32,7 @@ function Navbar() {
                     </svg>
                 </button>
             </div>
-            <div className="w-full lg:w-auto self-stretch text-gray-500 text-lg font-muli">
+            <div className="w-full lg:w-auto self-stretch text-gray-500 text-base 2xl:text-lg font-muli">
                 <div className="hidden lg:flex justify-center">
                     <a href="http://www.fts.uner.edu.ar/" target="_blank">
                         <img className="mr-8" src="/images/icon1.png" />
@@ -60,10 +60,10 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="text-md lg:flex-grow lg:flex">
-                        <Link href="/what-is">
+                        <Link href="/que-es-mapear-comunidad">
                             <a
                                 className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500 ${
-                                    router.pathname == '/what-is'
+                                    router.pathname == '/que-es-mapear-comunidad'
                                         ? `text-blue-500`
                                         : ''
                                 }`}
@@ -74,10 +74,10 @@ function Navbar() {
                     </div>
 
                     <div className="text-md lg:flex-grow lg:flex">
-                        <Link href="/how-works">
+                        <Link href="/quienes-somos">
                             <a
                                 className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500 ${
-                                    router.pathname == '/how-works'
+                                    router.pathname == '/quienes-somos'
                                         ? `text-blue-500`
                                         : ''
                                 }`}
@@ -88,7 +88,7 @@ function Navbar() {
                     </div>
 
                     <div className="text-md lg:flex-grow lg:flex">
-                        <Link href="/contact">
+                        <Link href="/contacto">
                             <a
                                 className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500 ${
                                     router.pathname == '/contact'

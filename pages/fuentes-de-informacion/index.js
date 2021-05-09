@@ -8,12 +8,12 @@ export default function FuentesDeInformacionPage() {
         <div>
             <Navbar />
 
-            <main className="flex flex-col">
-                <div className="flex-grow p-4">
-                    <div className={`${styles.container__title} my-4`}>
+            <main className="flex flex-col font-muli">
+                <div className="flex-grow p-4 m-4">
+                    <div className={`${styles.container__title} mt-32 py-6`}>
                         <h2>Fuentes de información</h2>
                     </div>
-                    <p>
+                    <p className="text-justify">
                         Con el objetivo de “mapear” atendiendo a los intereses y
                         necesidades del territorio, se utilizaron fuentes
                         primarias. Las mismas fueron obtenidas en reuniones,
@@ -25,105 +25,53 @@ export default function FuentesDeInformacionPage() {
                         privadas, que se detallan a continuación:
                     </p>
 
+                    <div className="grid grid-cols-3 gap-12 mt-6 mr-8">
+                        <Card
+                            title="Datos Argentina"
+                            outLink="https://datos.gob.ar/"
+                        />
 
-                    <Card title="Datos Argentina" outLink="https://datos.gob.ar/" />
+                        <Card
+                            title="Mapa Educativo Nacional"
+                            outLink="http://mapa.educacion.gob.ar/"
+                        />
 
-                    <div className={`${styles.sources}`}>
-                        <span>Datos Argentina</span>
-                        <br />
-                        <a href="https://datos.gob.ar/" target="_blank">
-                            {' '}
-                            https://datos.gob.ar/
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>Mapa Educativo Nacional</span>
-                        <br />
-                        <a href="http://mapa.educacion.gob.ar/" target="_blank">
-                            {' '}
-                            http://mapa.educacion.gob.ar/
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span> Ministerio de Salud de Entre Ríos</span>
-                        <br />
-                        <a
-                            href="http://www.entrerios.gov.ar/msalud/?page_id=34871"
-                            target="_blank"
-                        >
-                            {' '}
-                            http://www.entrerios.gov.ar/msalud/?page_id=34871
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>Policía de Entre Ríos</span>
-                        <br />
-                        <a
-                            href="http://www.policiadeentrerios.gob.ar/"
-                            target="_blank"
-                        >
-                            {' '}
-                            http://www.policiadeentrerios.gob.ar/
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>
-                            Secretaría de Extensión de la Facultad de Trabajo
-                            Social - UNER
-                        </span>
-                        <br />
-                        <a href="http://www.fts.uner.edu.ar/" target="_blank">
-                            {' '}
-                            http://www.fts.uner.edu.ar/
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>
-                            Guía de Recursos Básicos - Acción de Extensión en
-                            Emergencia -FTS
-                        </span>
-                        <br />
-                        <a href="https://bit.ly/2V8Yy1E" target="_blank">
-                            {' '}
-                            https://bit.ly/2V8Yy1E
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>
-                            CAPAS - Cartografías para la Atención en Salud -
-                            HESM
-                        </span>
-                        <br />
-                        <a
-                            href="http://www.hesm.gob.ar/articulo.php?art=7f100b7b36092fb9b06dfb4fac360931"
-                            target="_blank"
-                        >
-                            {' '}
-                            http://www.hesm.gob.ar/articulo.php?art=7f100b7b36092fb9b06dfb4fac360931
-                        </a>
-                    </div>
+                        <Card
+                            title="Ministerio de Salud de Entre Ríos"
+                            outLink="http://www.entrerios.gov.ar/msalud/?page_id=34871"
+                        />
 
-                    <div className={`${styles.sources}`}>
-                        <span>Base de datos Banco de Alimentos Paraná</span>
-                        <br />
-                        <a
-                            href="https://www.facebook.com/bancodealimentospna/"
-                            target="_blank"
-                        >
-                            {' '}
-                            https://www.facebook.com/bancodealimentospna/
-                        </a>
-                    </div>
-                    <div className={`${styles.sources}`}>
-                        <span>Arzobispado de Paraná</span>
-                        <br />
-                        <a
-                            href=" http://www.arzparan.org.ar/parroquias/"
-                            target="_blank"
-                        >
-                            {' '}
-                            http://www.arzparan.org.ar/parroquias/
-                        </a>
+                        <Card
+                            title="Policía de Entre Ríos"
+                            outLink="http://www.policiadeentrerios.gob.ar/"
+                        />
+
+                        <Card
+                            title=" Secretaría de Extensión de la Facultad de Trabajo
+                            Social - UNER"
+                            outLink="http://www.fts.uner.edu.ar/"
+                        />
+
+                        <Card
+                            title="Guía de Recursos Básicos - Acción de Extensión en
+                        Emergencia -FTS"
+                            outLink="https://bit.ly/2V8Yy1E"
+                        />
+
+                        <Card
+                            title="CAPAS - Cartografías para la Atención en Salud - HESM"
+                            outLink="https://bit.ly/2V8Yy1E"
+                        />
+
+                        <Card
+                            title="Base de datos Banco de Alimentos Paraná"
+                            outLink="https://www.facebook.com/bancodealimentospna/"
+                        />
+
+                        <Card
+                            title="Arzobispado de Paraná"
+                            outLink="http://www.arzparan.org.ar/parroquias/"
+                        />
                     </div>
                 </div>
 

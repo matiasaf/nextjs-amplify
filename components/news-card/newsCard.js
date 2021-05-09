@@ -13,7 +13,7 @@ export const NewsCard = ({ mapUrl, title, body }) => (
         />
         <div className="p-8">
             <div className="text-center text-gray-600 text-2xl">{title}</div>
-            <p className="text-center mt-4">{body}</p>
+            <p className="text-justify mt-4">{body}</p>
         </div>
     </div>
 );

@@ -38,10 +38,9 @@ export default function Home() {
                     <StyledDivider className="self-center mt-4" />
 
                     <div className="flex justify-center m-8 flex-wrap">
-                       
                         <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 m-4 w-full">
                             <Iframe
-                                url="https://www.google.com/maps/d/embed?mid=1wHADhzFZTOz37t7KwDxy4bzOuRdMcMR9"
+                                url="https://www.google.com/maps/d/embed?mid=12cx7Lz54r8BdgdCN27ovno1OPt4SLzAI"
                                 width="450px"
                                 height="450px"
                                 id="myId"
@@ -79,7 +78,7 @@ export default function Home() {
 
                         <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 m-4 w-full">
                             <Iframe
-                                url="https://www.google.com/maps/d/embed?mid=1xowCKXXVM4MESRs1Op7oSFQtH8cYT2Fm"
+                                url="https://www.google.com/maps/d/embed?mid=1PPMtpg8pnwJRNqZV8e1BvgCOtikYaHQH"
                                 width="450px"
                                 height="450px"
                                 id="myId"
@@ -118,7 +117,6 @@ export default function Home() {
                 {/* CARD SECTION */}
 
                 <div className="flex justify-evenly flex-wrap m-16">
-                   
                     <Card
                         title="Instructivos para acceder a los mapas"
                         appLink="informacion-mapas"
@@ -127,7 +125,7 @@ export default function Home() {
                         title="Sumate a la Comunidad"
                         appLink="como-me-sumo"
                     />
-                     <Card
+                    <Card
                         title="Fuentes de información"
                         appLink="fuentes-de-informacion"
                     />

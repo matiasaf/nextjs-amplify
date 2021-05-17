@@ -7,12 +7,12 @@ export default function ComoMeSumoPage() {
         <>
             <Navbar />
 
-            <main className="mt-44 flex-grow font-muli text-justify">
+            <main className="mt-44 flex-grow h-screen font-muli text-justify">
                 <div className="px-16 mb-4">
                     <p className="text-lg">
                         Mapear Comunidad es una iniciativa que nace a partir del
                         interés de relevar datos de
-                        instituciones/organizaciones/actores/proyectos de
+                        instituciones / organizaciones / actores / proyectos de
                         extensión universitarios y geo localizarlos creando así
                         mapas. Estos pueden ser recuperados tanto por la
                         población en general como por los organismos del Estado

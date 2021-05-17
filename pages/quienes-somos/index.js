@@ -57,6 +57,12 @@ export default function HowWorksPage() {
                         email="silvanaisabelgomez@gmail.com"
                         isEmail={true}
                     />
+
+                    <ContactCard
+                        name="Valentín Fernando Volpe"
+                        email="valentinfernandovolpe@gmail.com"
+                        isEmail={true}
+                    />
                 </div>
 
                 <div className="flex font-muli justify-center text-bold text-2xl w-full">

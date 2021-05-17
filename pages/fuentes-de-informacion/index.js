@@ -2,6 +2,7 @@ import Navbar from '../../components/navigation/navbar';
 import { FooterSection } from '../../components/footer-section';
 import styles from './fuentes-de-informacion.module.scss';
 import Card from '../../components/card/card';
+import BackHomeButton from '../../components/buttons/BackHomeButton';
 
 export default function FuentesDeInformacionPage() {
     return (
@@ -75,6 +76,10 @@ export default function FuentesDeInformacionPage() {
                             title="Arzobispado de Paraná"
                             outLink="http://www.arzparan.org.ar/parroquias/"
                         />
+                    </div>
+
+                    <div className="flex justify-end w-full mt-16">
+                        <BackHomeButton />
                     </div>
                 </div>
 

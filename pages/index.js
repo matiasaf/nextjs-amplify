@@ -150,7 +150,7 @@ export default function Home() {
 
                     <StyledDivider className="self-center mt-4" />
 
-                    <div className="px-48 my-8">
+                    <div className="lg:px-48 px-16 lg:my-8">
                         <SimpleSlider />
                     </div>
                 </div>

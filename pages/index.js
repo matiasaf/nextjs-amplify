@@ -41,7 +41,7 @@ export default function Home() {
                     <StyledDivider className="self-center mt-4" />
 
                     <div className="flex justify-center m-8 flex-wrap">
-                        <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 m-4 w-full">
+                        <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 lg:mx-4 my-4 w-full">
                             <Iframe
                                 url="https://www.google.com/maps/d/embed?mid=12cx7Lz54r8BdgdCN27ovno1OPt4SLzAI"
                                 width="450px"
@@ -79,7 +79,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 m-4 w-full">
+                        <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 my-4 lg:mx-4 w-full">
                             <Iframe
                                 url="https://www.google.com/maps/d/embed?mid=1PPMtpg8pnwJRNqZV8e1BvgCOtikYaHQH"
                                 width="450px"

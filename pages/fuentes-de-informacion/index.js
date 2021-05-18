@@ -30,7 +30,7 @@ export default function FuentesDeInformacionPage() {
                         privadas, que se detallan a continuación:
                     </p>
 
-                    <div className="grid grid-cols-3 gap-12 mt-6 mr-8">
+                    <div className="grid lg:grid-cols-3 gap-12 mt-6 mr-8">
                         <Card
                             title="Datos Argentina"
                             outLink="https://datos.gob.ar/"

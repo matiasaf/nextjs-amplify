@@ -56,7 +56,7 @@ export default function SimpleSlider() {
                                 rgba(255, 255, 255, 0.2),
                                 rgba(255, 255, 255, 0.2)
                             ),
-                            url('https://poblaciones.org/wp-content/uploads/2020/09/bfd7e2a8-e09d-4a1b-930d-4d79fdadde57-1-500x500xct.jpg?189db0&189db0');
+                            url('images/noticia-2.jpeg');
                         box-shadow: 0 3px 6px rgba(37, 43, 47, 0.55);
                         height: 20rem;
                         display: flex;
@@ -66,13 +66,13 @@ export default function SimpleSlider() {
                     `}
                     onClick={() =>
                         goToLink(
-                            'https://noticias.uner.edu.ar/notas/10379/las-palabras-en-accion-mapear-en-emergencia'
+                            'https://www.elonce.com/secciones/institucionales/633732-presentaron-un-mapeo-con-informacinn-para-la-emergencia-sanitaria-en-paranna.htm'
                         )
                     }
                 >
                     <div className="bg-gray-300 w-1/2 opacity-75 rounded p-2">
                         <div className="text-gray-800 font-muli">
-                            Las palabras en accion: Mapear en Emergencia
+                            Mapeo con información para la emergencia sanitaria.
                         </div>
                     </div>
                 </div>

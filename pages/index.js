@@ -10,6 +10,9 @@ import MailIcon from '../components/svg/mailIcon';
 import { BackgroundImage } from '../components/styled/backgroundImage';
 import { FooterSection } from '../components/footer-section';
 import Iframe from 'react-iframe';
+import InfoIcon from '../components/svg/info';
+import MosaicoIcon from '../components/svg/instructivo-icon';
+import SumateIcon from '../components/svg/sumate-icon';
 
 export default function Home() {
     return (
@@ -120,15 +123,20 @@ export default function Home() {
                     <Card
                         title="Instructivos para acceder a los mapas"
                         appLink="informacion-mapas"
-                    />
-                    <Card
-                        title="Sumate a la Comunidad"
-                        appLink="como-me-sumo"
-                    />
+                    >
+                        <MosaicoIcon />
+                    </Card>
+
+                    <Card title="Sumate a la Comunidad" appLink="como-me-sumo">
+                        <SumateIcon />
+                    </Card>
+
                     <Card
                         title="Fuentes de información"
                         appLink="fuentes-de-informacion"
-                    />
+                    >
+                        <InfoIcon />
+                    </Card>
                 </div>
 
                 {/* CARTOGRAFIAS SECTION */}

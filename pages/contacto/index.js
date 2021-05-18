@@ -7,8 +7,8 @@ export default function ContactPage() {
         <div>
             <Navbar />
 
-            <main className="flex justify-center items-center h-screen">
-                <div className="lg:w-1/2 w-3/4">
+            <main className="flex mt-46 justify-center items-center h-96 lg:h-screen">
+                <div className="lg:w-1/2 w-full px-4">
                     <ContactCard
                         name="Envianos un e-mail si quieres contactarnos."
                         email="mapearenemergencia@gmail.com"

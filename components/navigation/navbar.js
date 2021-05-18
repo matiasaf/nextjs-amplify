@@ -1,19 +1,22 @@
 import Link from 'next/link';
-import LocationIcon from '../svg/locationIcon';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+
+import LocationIcon from '../svg/locationIcon';
+import useWindowsWidth from '../customs-hooks/useWindowWidth';
 
 function Navbar() {
     const [menuOn, setOnMenu] = useState(false);
     const router = useRouter();
+    const onSmallScreen = useWindowsWidth();
 
     return (
         <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
             <div className="flex lg:ml-4 font-muli">
                 <div className="self-center">
-                    <LocationIcon height={40} />
+                    <LocationIcon height={onSmallScreen ? 25 : 40} />
                 </div>
-                <span className="lg:ml-4 md:text-3xl 2xl:text-5xl text-gray-600">
+                <span className="ml-2 lg:ml-4 text-lg md:text-3xl 2xl:text-5xl text-gray-600">
                     MAPEAR <span className="text-blue-400"> COMUNIDAD </span>
                 </span>
             </div>
@@ -38,7 +41,10 @@ function Navbar() {
                         <img className="mr-8" src="/images/icon1.png" />
                     </a>
                     <a href="http://www.fceco.uner.edu.ar/" target="_blank">
-                        <img className="mr-8 w-40" src="/images/logo-fceco.png" />
+                        <img
+                            className="mr-8 w-40"
+                            src="/images/logo-fceco.png"
+                        />
                     </a>
                     <a href="https://www.parana.gob.ar/" target="_blank">
                         {' '}
@@ -63,7 +69,8 @@ function Navbar() {
                         <Link href="/que-es-mapear-comunidad">
                             <a
                                 className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-4 hover:text-blue-500 ${
-                                    router.pathname == '/que-es-mapear-comunidad'
+                                    router.pathname ==
+                                    '/que-es-mapear-comunidad'
                                         ? `text-blue-500`
                                         : ''
                                 }`}

@@ -6,7 +6,7 @@ export default function ContactCard({ name, email, isEmail }) {
                         src="https://images.unsplash.com/photo-1611342799915-5dd9f1665d04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                         alt="User avatar"
                     /> */}
-            <p className="capitalize text-lg mt-1">{name}</p>
+            <p className="text-lg mt-1">{name}</p>
 
             <a
                 href={isEmail ? `mailto:${email}` : '#'}

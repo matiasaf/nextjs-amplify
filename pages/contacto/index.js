@@ -11,7 +11,7 @@ export default function ContactPage() {
                 <div className="lg:w-1/2 w-3/4">
                     <ContactCard
                         name="Envianos un e-mail si quieres contactarnos."
-                        email="mapearcomunidad@gmail.com"
+                        email="mapearenemergencia@gmail.com"
                         isEmail={true}
                     />
                 </div>

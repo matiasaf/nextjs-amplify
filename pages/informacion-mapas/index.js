@@ -24,8 +24,8 @@ export default function InformacionMapasPage() {
                     </h2>
                     <img
                         className="mt-16"
-                        src="../images/instructivos/02.jpeg"
-                        alt="Showing the instructive 2 image"
+                        src="../images/instructivos/03.jpeg"
+                        alt="Showing the instructive 3 image"
                     />
                 </div>
 
@@ -36,7 +36,7 @@ export default function InformacionMapasPage() {
                     </h2>
                     <img
                         className="mt-16"
-                        src="../images/instructivos/03.jpeg"
+                        src="../images/instructivos/02.jpeg"
                         alt="Showing the instructive 2 image"
                     />
                 </div>

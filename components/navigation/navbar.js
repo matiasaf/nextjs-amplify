@@ -99,7 +99,7 @@ function Navbar() {
                         <Link href="/contacto">
                             <a
                                 className={`block mt-4 pl-4 lg:inline-block lg:mt-0 lg:self-center text-gray-500 mr-8 hover:text-blue-500 ${
-                                    router.pathname == '/contact'
+                                    router.pathname == '/contacto'
                                         ? `text-blue-500`
                                         : ''
                                 }`}

@@ -9,10 +9,11 @@ function Navbar() {
     const [menuOn, setOnMenu] = useState(false);
     const router = useRouter();
     const onSmallScreen = useWindowsWidth();
+    const goToHome = () => router.push('/');
 
     return (
         <nav className="fixed w-full bg-white flex top-0 items-center justify-between flex-wrap border-b border-gray-200 py-4 z-30">
-            <div className="flex lg:ml-4 font-muli">
+            <div className="flex lg:ml-4 font-muli cursor-pointer" onClick={goToHome}>
                 <div className="self-center">
                     <LocationIcon height={onSmallScreen ? 25 : 40} />
                 </div>

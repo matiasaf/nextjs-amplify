@@ -43,7 +43,7 @@ export default function SimpleSlider() {
                 >
                     <div className="bg-gray-300 w-1/2 opacity-75 rounded p-2">
                         <div className="text-gray-800 font-muli">
-                            Las palabras en accion: Mapear en Emergencia
+                            Las palabras en acción: Mapear en Emergencia
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 function TextSection() {
     return (
-        <div className="flex flex-col justify-center lg:w-1/2 lg:ml-16 lg:py-6 px-8">
+        <div className="flex flex-col justify-center lg:w-2/3 lg:py-6 px-8">
             <h1 className="font-muli text-white text-3xl text-center">Mapear Comunidad</h1>
             <p className="font-muli mt-4 text-white text-justify text-lg">
                 Mapear Comunidad es una iniciativa que se orienta a visibilizar,

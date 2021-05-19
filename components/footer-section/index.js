@@ -15,7 +15,7 @@ export const FooterSection = ({}) => (
             <div className="flex">
                 <MailIcon height={32} />
                 <label className="text-gray-800 ml-4">
-                    mapearenemergencia@gmail.com
+                    mapearcomunidad@gmail.com
                 </label>
             </div>
         </div>

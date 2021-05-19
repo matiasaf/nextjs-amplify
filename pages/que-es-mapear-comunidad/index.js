@@ -1,6 +1,5 @@
 import Navbar from '../../components/navigation/navbar';
 import { FooterSection } from '../../components/footer-section';
-import Link from 'next/link';
 import BackHomeButton from '../../components/buttons/BackHomeButton';
 
 export default function WhatIsPage() {
@@ -77,9 +76,7 @@ export default function WhatIsPage() {
                     en general que contribuye a la toma de decisiones oportunas
                     en el contexto de emergencia sanitaria.
                 </p>
-                <br />
-                Accedé al proyecto. Resolución que aprueba el proyecto.
-                <br />
+
                 <br />
                 <p>
                     La acción de extensión{' '}
@@ -96,9 +93,7 @@ export default function WhatIsPage() {
                     acompaña a los procesos de planificación y de reconocimiento
                     de trayectorias diversas.
                 </p>
-                <br />
-                Accedé al proyecto. Resolución que aprueba el proyecto.
-                <br />
+
                 <br />
                 <p>
                     Mapear Comunidad es un proceso que continúa y sigue

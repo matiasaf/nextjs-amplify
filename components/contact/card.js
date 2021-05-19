@@ -10,7 +10,7 @@ export default function ContactCard({ name, email, isEmail }) {
 
             <a
                 href={isEmail ? `mailto:${email}` : '#'}
-                className="rounded-md bg-gradient-to-r from-blue-400 to-blue-300 text-md text-white pt-3 pb-4 px-4"
+                className="rounded-md bg-gradient-to-r from-blue-400 to-blue-300 text-md text-white pt-3 pb-4 px-4 mt-4"
             >
                 {email}
             </a>

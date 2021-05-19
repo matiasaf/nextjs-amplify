@@ -3,7 +3,7 @@ import MailIcon from '../svg/mailIcon';
 
 export const FooterSection = ({}) => (
     <div className="bg-gray-100 h-32 lg:h-64 flex justify-evenly items-center flex-wrap">
-        <div className="flex ml-4 font-muli my-16">
+        <div className="flex ml-4 font-muli lg:my-16">
             <div className="self-center">
                 <LocationIcon height={30} />
             </div>

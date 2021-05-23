@@ -5,8 +5,6 @@ import Card from '../components/card/card';
 import { StyledDivider } from '../components/styled/divider';
 import { NewsCard } from '../components/news-card/newsCard';
 import SimpleSlider from '../components/slider/simpleSlider';
-import LocationIcon from '../components/svg/locationIcon';
-import MailIcon from '../components/svg/mailIcon';
 import { BackgroundImage } from '../components/styled/backgroundImage';
 import { FooterSection } from '../components/footer-section';
 import Iframe from 'react-iframe';
@@ -17,7 +15,14 @@ import SumateIcon from '../components/svg/sumate-icon';
 export default function Home() {
     return (
         <div>
-            <title>Mapear Comunidad</title>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
             <header>
                 <Navbar />
             </header>

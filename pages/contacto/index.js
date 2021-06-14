@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Navbar from '../../components/navigation/navbar';
 import ContactCard from '../../components/contact/card';
 import { FooterSection } from '../../components/footer-section';
@@ -6,6 +7,15 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function ContactPage() {
     return (
         <div className="flex flex-col h-screen justify-between">
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
+
             <Navbar />
 
             <main className="flex flex-col mt-36 lg:mt-52 justify-center items-center">

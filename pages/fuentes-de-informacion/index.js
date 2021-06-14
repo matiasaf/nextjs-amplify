@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Navbar from '../../components/navigation/navbar';
 import { FooterSection } from '../../components/footer-section';
 import styles from './fuentes-de-informacion.module.scss';
@@ -8,7 +9,14 @@ import InfoIcon from '../../components/svg/info';
 export default function FuentesDeInformacionPage() {
     return (
         <div>
-            <title>Mapear Comunidad</title>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
             <header>
                 <Navbar />
             </header>

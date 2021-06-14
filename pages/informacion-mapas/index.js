@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Navbar from '../../components/navigation/navbar';
 import { FooterSection } from '../../components/footer-section';
 import BackHomeButton from '../../components/buttons/BackHomeButton';
@@ -5,6 +6,15 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function InformacionMapasPage() {
     return (
         <div>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
+
             <Navbar />
 
             <main className="mt-52 font-muli">

@@ -1,4 +1,5 @@
 import Navbar from '../../components/navigation/navbar';
+import Head from 'next/head';
 import Link from 'next/link';
 import { FooterSection } from '../../components/footer-section';
 import ContactCard from '../../components/contact/card';
@@ -7,7 +8,14 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function HowWorksPage() {
     return (
         <div className="flex flex-col">
-            <title>Mapear Comunidad</title>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
             <header>
                 <Navbar />
             </header>

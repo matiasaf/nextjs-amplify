@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Navbar from '../../components/navigation/navbar';
 import { FooterSection } from '../../components/footer-section';
 import BackHomeButton from '../../components/buttons/BackHomeButton';
@@ -5,6 +6,14 @@ import BackHomeButton from '../../components/buttons/BackHomeButton';
 export default function ComoMeSumoPage() {
     return (
         <>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
             <Navbar />
             <main className="mt-44 flex flex-col font-muli text-justify">
                 <div className="lg:h-screen px-16 mb-4">

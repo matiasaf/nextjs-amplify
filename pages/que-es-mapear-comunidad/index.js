@@ -1,11 +1,19 @@
 import Navbar from '../../components/navigation/navbar';
+import Head from 'next/head';
 import { FooterSection } from '../../components/footer-section';
 import BackHomeButton from '../../components/buttons/BackHomeButton';
 
 export default function WhatIsPage() {
     return (
         <div className="flex flex-col">
-            <title>Mapear Comunidad</title>
+            <Head>
+                <link
+                    rel="shortcut icon"
+                    type="image/svg+xml"
+                    href="../SVG/072-location.svg"
+                />
+                <title>Mapear Comunidad</title>
+            </Head>
             <header>
                 <Navbar />
             </header>

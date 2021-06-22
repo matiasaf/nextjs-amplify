@@ -18,7 +18,7 @@ export default function ContactPage() {
 
             <Navbar />
 
-            <main className="flex flex-col mt-36 lg:mt-52 justify-center items-center">
+            <main className="flex flex-col mt-36 h-screen justify-center items-center">
                 <div className="lg:w-1/2 w-full px-4 lg:mt-28">
                     <ContactCard
                         name="Para contactarnos enviá un correo electrónico a la siguiente dirección: "

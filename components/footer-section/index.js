@@ -1,23 +1,21 @@
-import LocationIcon from '../svg/locationIcon';
-import MailIcon from '../svg/mailIcon';
+import RedesSection from '../redes-section/redes-section';
 
 export const FooterSection = ({}) => (
-    <div className="bg-gray-100 h-32 lg:h-64 flex justify-evenly items-center flex-wrap">
-        <div className="flex ml-4 font-muli lg:my-16">
-            <div className="self-center">
-                <LocationIcon height={30} />
+    <div className="bg-gray-100 lg:py-10 py-5 flex justify-evenly items-center flex-wrap">
+        <div className="hidden lg:flex ml-4 font-muli lg:my-16 ">
+            <div className="lg:w-8 w-5 ml-2">
+                <img
+                    className="w-full"
+                    src="../images/icono-mapear.png"
+                    alt="Icono Mapear Comunidad"
+                />
             </div>
             <span className="ml-4 text-2xl lg:text-5xl text-gray-600">
-                MAPEAR <span className="text-blue-400"> COMUNIDAD </span>
+                MAPEAR <span className="text-red-800"> COMUNIDAD </span>
             </span>
         </div>
-        <div>
-            <div className="flex">
-                <MailIcon height={32} />
-                <label className="text-gray-800 ml-4">
-                    mapearcomunidad@gmail.com
-                </label>
-            </div>
+        <div className="my-4">
+           <RedesSection />
         </div>
     </div>
 );

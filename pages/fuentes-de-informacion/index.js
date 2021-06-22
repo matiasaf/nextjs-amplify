@@ -23,7 +23,7 @@ export default function FuentesDeInformacionPage() {
 
             <main className="flex flex-col font-muli">
                 <div className="flex-grow p-4 m-4">
-                    <div className={`${styles.container__title} mt-32 py-6`}>
+                    <div className={`${styles.container__title} mt-10 py-6 lg:mt-32`}>
                         <h2>Fuentes de información</h2>
                     </div>
                     <p className="text-justify">

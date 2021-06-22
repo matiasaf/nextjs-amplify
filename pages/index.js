@@ -3,7 +3,6 @@ import Navbar from '../components/navigation/navbar';
 import TextSection from '../components/text-section/textSection';
 import Card from '../components/card/card';
 import { StyledDivider } from '../components/styled/divider';
-import { NewsCard } from '../components/news-card/newsCard';
 import SimpleSlider from '../components/slider/simpleSlider';
 import { BackgroundImage } from '../components/styled/backgroundImage';
 import { FooterSection } from '../components/footer-section';
@@ -13,6 +12,9 @@ import MosaicoIcon from '../components/svg/instructivo-icon';
 import SumateIcon from '../components/svg/sumate-icon';
 
 export default function Home() {
+    const goToLink = (link) => {
+        window.open(link, '_blank');
+    };
     return (
         <div>
             <Head>
@@ -47,20 +49,20 @@ export default function Home() {
 
                     <div className="flex justify-center m-8 flex-wrap">
                         <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 lg:mx-4 my-4 w-full">
-                            <Iframe
-                                url="https://www.google.com/maps/d/embed?mid=12cx7Lz54r8BdgdCN27ovno1OPt4SLzAI"
-                                width="450px"
-                                height="450px"
-                                id="myId"
-                                className="w-full"
-                                display="initial"
-                                position="relative"
+                            <img
+                                src="images/mapa.png"
+                                className="w-full cursor-pointer"
+                                onClick={() =>
+                                    goToLink(
+                                        'https://www.google.com/maps/d/embed?mid=12cx7Lz54r8BdgdCN27ovno1OPt4SLzAI'
+                                    )
+                                }
                             />
-                            <div className="p-8">
+                            <div className="p-8 flex flex-col h-full">
                                 <div className="text-center text-gray-600 text-2xl font-bold">
                                     Mapear en Emergencia
                                 </div>
-                                <p className="text-justify mt-6">
+                                <p className="text-justify mt-6 flex-grow">
                                     En el marco de la acción en emergencia
                                     “Mapear en Emergencia” se construye este
                                     mapa geolocalizando los espacios que
@@ -74,31 +76,35 @@ export default function Home() {
                                     Organismos Públicos, efectores y áreas
                                     programáticas de salud, comisarías y
                                     jurisdicciones de comisarías de la ciudad.
-                                    <br />
-                                    <br />
-                                    <span className="font-bold">
-                                        Para ampliar el mapa, hacer clic en el
-                                        margen superior derecho.
-                                    </span>
                                 </p>
+                                <div className="flex font-muli text-white justify-center mt-4 cursor-pointer">
+                                    <div className="bg-red-800 flex justify-center p-2 rounded-2xl transform transition duration-500 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-110">
+                                        <a
+                                            href="https://www.google.com/maps/d/embed?mid=12cx7Lz54r8BdgdCN27ovno1OPt4SLzAI"
+                                            target="_blank"
+                                        >
+                                            Ingresar al mapa
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 my-4 lg:mx-4 w-full">
-                            <Iframe
-                                url="https://www.google.com/maps/d/embed?mid=1PPMtpg8pnwJRNqZV8e1BvgCOtikYaHQH"
-                                width="450px"
-                                height="450px"
-                                id="myId"
-                                className="w-full"
-                                display="initial"
-                                position="relative"
+                            <img
+                                src="images/mapa-2.png"
+                                className="w-full cursor-pointer"
+                                onClick={() =>
+                                    goToLink(
+                                        'https://www.google.com/maps/d/embed?mid=1PPMtpg8pnwJRNqZV8e1BvgCOtikYaHQH'
+                                    )
+                                }
                             />
-                            <div className="p-8 flex flex-col">
+                            <div className="p-8 flex flex-col h-full">
                                 <div className="text-center text-gray-600 text-2xl font-bold">
                                     Mapear Redes
                                 </div>
-                                <p className="text-justify mt-6">
+                                <p className="text-justify mt-6 flex-grow">
                                     En el marco de la acción en emergencia
                                     “Mapear Redes”, la cual da continuidad al
                                     trabajo iniciado en “Mapear en Emergencia”
@@ -107,16 +113,17 @@ export default function Home() {
                                     interinstitucionales, espacios y actividades
                                     deportivas, vecinales, espacios culturales,
                                     servicios de protección de derechos.
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <span className="font-bold">
-                                        Para ampliar el mapa, hacer clic en el
-                                        margen superior derecho.
-                                    </span>
                                 </p>
+                                <div className="flex font-muli text-white justify-center mt-4 cursor-pointer">
+                                    <div className="bg-red-800 flex justify-center p-2 rounded-2xl transform transition duration-500 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-110">
+                                        <a
+                                            href="https://www.google.com/maps/d/embed?mid=1PPMtpg8pnwJRNqZV8e1BvgCOtikYaHQH"
+                                            target="_blank"
+                                        >
+                                            Ingresar al mapa
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

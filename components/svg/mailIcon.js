@@ -1,10 +1,11 @@
-function MailIcon({ height }) {
+function MailIcon({ height, color }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             id="Icons"
             viewBox="0 0 74 74"
             height={height}
+            fill={color ? color : 'inherit'}
         >
             <path d="M3,30a1,1,0,0,1-.607-1.794l11-8.411a1,1,0,0,1,1.214,1.589l-11,8.41A.994.994,0,0,1,3,30Z" />
             <path d="M71,30a.994.994,0,0,1-.607-.206l-11-8.41A1,1,0,0,1,60.607,19.8l11,8.411A1,1,0,0,1,71,30Z" />

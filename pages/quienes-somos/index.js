@@ -38,13 +38,13 @@ export default function HowWorksPage() {
 
                     <ContactCard
                         name="Diego Neri Ribero"
-                        email=" neriribero@gmail.com"
+                        email="neriribero@gmail.com"
                         isEmail={true}
                     />
 
                     <ContactCard
                         name="Sergio Daniel Granetto"
-                        email="sergiogranetto10@gmail.com"
+                        email="sergio.granetto@uner.edu.ar"
                         isEmail={true}
                     />
 
@@ -62,7 +62,7 @@ export default function HowWorksPage() {
 
                     <ContactCard
                         name="Silvana Isabel Gómez"
-                        email="silvanaisabelgomez@gmail.com"
+                        email="silvana.gomez@uner.edu.ar"
                         isEmail={true}
                     />
 
@@ -95,11 +95,6 @@ export default function HowWorksPage() {
                         email="Concejala de la Ciudad de Paraná"
                         isEmail={false}
                     />
-                    <ContactCard
-                        name="Sergio Granetto"
-                        email="Concejal de la Ciudad de Paraná"
-                        isEmail={false}
-                    />{' '}
                 </div>
 
                 <BackHomeButton />

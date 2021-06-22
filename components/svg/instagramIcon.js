@@ -1,10 +1,11 @@
-const InstagramIcon = ({ height }) => (
+const InstagramIcon = ({ height, color }) => (
     <svg
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         height={height}
         viewBox="0 0 169.063 169.063"
+        fill={color ? color : 'inherit'}
     >
         <g>
             <path

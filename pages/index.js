@@ -6,7 +6,6 @@ import { StyledDivider } from '../components/styled/divider';
 import SimpleSlider from '../components/slider/simpleSlider';
 import { BackgroundImage } from '../components/styled/backgroundImage';
 import { FooterSection } from '../components/footer-section';
-import Iframe from 'react-iframe';
 import InfoIcon from '../components/svg/info';
 import MosaicoIcon from '../components/svg/instructivo-icon';
 import SumateIcon from '../components/svg/sumate-icon';

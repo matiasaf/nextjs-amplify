@@ -32,7 +32,7 @@ export default function HowWorksPage() {
 
                     <ContactCard
                         name="Zulma Cristina Cabrera"
-                        email="zulmacabrera.c@hotmail.com"
+                        email="cabrerazulma293@hotmail.com"
                         isEmail={true}
                     />
 

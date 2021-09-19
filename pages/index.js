@@ -49,7 +49,7 @@ export default function Home() {
           <div className="flex justify-center m-8 flex-wrap">
             <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 lg:mx-4 my-4 w-full">
               <img
-                src="images/mapa.png"
+                src="images/mapear-en-emergencias.png"
                 className="w-full cursor-pointer"
                 onClick={() =>
                   goToLink(
@@ -87,7 +87,7 @@ export default function Home() {
 
             <div className="flex flex-col rounded bg-gray-200 shadow-md lg:w-1/3 my-4 lg:mx-4 w-full">
               <img
-                src="images/mapa-2.png"
+                src="images/mapear-redes.png"
                 className="w-full cursor-pointer"
                 onClick={() =>
                   goToLink(

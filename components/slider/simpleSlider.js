@@ -28,6 +28,7 @@ export default function SimpleSlider() {
                 rgba(255, 255, 255, 0.2)
               ),
               url("images/noticia-2.jpeg");
+            background-size: cover;
             box-shadow: 0 3px 6px rgba(37, 43, 47, 0.55);
             height: 20rem;
             display: flex;
@@ -41,9 +42,9 @@ export default function SimpleSlider() {
             )
           }
         >
-          <div className="bg-gray-300 w-1/2 opacity-75 rounded p-2">
-            <div className="text-gray-800 font-muli">
-              Mapeo con información para la emergencia sanitaria.
+          <div className="bg-gray-300 w-1/2 opacity-75 rounded p-2 flex justify-center items-center">
+            <div className="text-gray-900 font-muli font-bold">
+              Mapeo con información para la emergencia sanitaria
             </div>
           </div>
         </div>

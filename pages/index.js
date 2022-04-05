@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Iframe from "react-iframe";
 import Navbar from "../components/navigation/navbar";
 import TextSection from "../components/text-section/textSection";
 import Card from "../components/card/card";
@@ -35,10 +36,9 @@ export default function Home() {
           </div>
         </BackgroundImage>
 
-        {/* NOVEDADES SECTION */}
-
         <div className="flex flex-col justify-around py-8 bg-gray-100">
-          <StyledDivider className="self-center mb-4" />
+          {/* NOVEDADES SECTION */}
+          <StyledDivider className="self-center mt-4" />
 
           <h1 className="text-center font-muli font-extrabold text-2xl text-gray-700">
             Mapas

@@ -36,9 +36,9 @@ export default function Home() {
           </div>
         </BackgroundImage>
 
+        {/* NOVEDADES SECTION */}
         <div className="flex flex-col justify-around py-8 bg-gray-100">
-          {/* NOVEDADES SECTION */}
-          <StyledDivider className="self-center mt-4" />
+          <StyledDivider className="self-center mt-4 mb-4" />
 
           <h1 className="text-center font-muli font-extrabold text-2xl text-gray-700">
             Mapas

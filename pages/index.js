@@ -36,7 +36,16 @@ export default function Home() {
           </div>
         </BackgroundImage>
 
+        <Iframe
+          url="https://mapafederaldelcuidado.mingeneros.gob.ar/"
+          width="100%"
+          height="500px"
+          display="initial"
+          position="relative"
+        />
+
         {/* NOVEDADES SECTION */}
+
         <div className="flex flex-col justify-around py-8 bg-gray-100">
           <StyledDivider className="self-center mt-4 mb-4" />
 
